@@ -62,37 +62,82 @@ nav {
 }
 
 
-/* 3rd section */
 
-.sec{
-    border: 2px solid red;
-    height: 280px;
-    width:30%;
-    background-color: rgb(30, 54, 75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
 .trd{
-    margin-top: 140px;
-   display: flex;
-   justify-content: space-around;
-}
-#sec1{
-    background-image: url(colleges-showcase.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-
-}
-#sec2{
-    background-image: url(cutoff-showcase.jpg);
-    background-size: cover;
-
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 
-#sec3{
-    background-image: url(pexels-photo-4144224.jpeg);
-    background-size: cover;
+.img{
+  margin-top: 7%;
+  border: black;
+  border-radius: 7px;
+  opacity: 1;
+  display: block;
+  width: 302px;
+  height: 302px;;
+  transition: .5s ease;
 }
+.content1{
+  position: absolute;
+  top:55%;
+  left: 12%;
+  height: auto;
+  background-color: #ff771d;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content2{
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  background-color: #ff771d;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff
+  
+}
+.content3{
+  position: absolute;
+  top: 55%;
+  left: 88%;
+  background-color: #ff771d;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff
+}
+
+
+.overlay{
+  opacity: 0;
+}
+.img:hover img{
+  opacity: .5;
+}
+.img:hover .overlay{
+  opacity:1;
+}
+
+
+
+
+
+
+
+
+
